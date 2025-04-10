@@ -6,6 +6,151 @@
 
 
 
+/* Base Styles */
+.hero-section {
+    background-color: #f9f4ec;
+    width: 100%;
+    min-height: 100vh; /* Desktop default */
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.hero-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.hero-content {
+    flex: 1;
+    min-width: 50%;
+}
+
+.hero-image {
+    flex: 1;
+    min-width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-image img {
+    max-width: 100%;
+    height: auto;
+    max-height: 600px;
+    object-fit: contain;
+    border-radius: 8px;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+}
+
+.hero-content h1 {
+    font-size: clamp(32px, 5vw, 48px);
+    color: #000;
+    margin-bottom: 15px;
+    line-height: 1.2;
+    font-weight: 700;
+}
+
+.subtitle {
+    font-size: clamp(14px, 2vw, 18px);
+    margin-bottom: 20px;
+    color: #000;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.description {
+    font-size: clamp(16px, 2.5vw, 20px);
+    margin: 25px 0;
+    color: #000;
+    line-height: 1.5;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: #000;
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #333;
+    transform: translateY(-2px);
+}
+
+/* Tablet Landscape and Small Laptops */
+@media (max-width: 1024px) {
+    .hero-container {
+        gap: 30px;
+    }
+    
+    .hero-image img {
+        max-height: 500px;
+    }
+}
+
+/* Tablet Portrait */
+@media (max-width: 768px) {
+    .hero-container {
+        flex-direction: column;
+        gap: 40px;
+        text-align: center;
+    }
+    
+    .hero-content, .hero-image {
+        width: 100%;
+        min-width: 100%;
+    }
+    
+    .hero-image img {
+        max-height: 400px;
+    }
+    
+    .cta-button {
+        margin: 0 auto;
+    }
+}
+
+/* Mobile Devices */
+@media (max-width: 480px) {
+    .hero-section {
+        min-height: 55vh; /* Mobile specific */
+    }
+    .hero-container {
+        gap: 30px;
+    }
+    
+    .hero-content h1 {
+        margin-bottom: 10px;
+    }
+    
+    .description {
+        margin: 20px 0;
+    }
+    
+    .hero-image img {
+        max-height: 300px;
+    }
+    
+    .cta-button {
+        padding: 10px 25px;
+        font-size: 14px;
+    }
+}
+
+
+
 /* VINEYARD */
 .info-section {
     display: flex;

@@ -107,3 +107,150 @@
     });
 
 })(jQuery);
+
+// Smooth scrolling function
+function smoothScroll(targetId) {
+    const targetSection = document.querySelector(targetId);
+    if (targetSection) {
+        // Close mobile menu if open
+        const offcanvasMenu = document.querySelector('.offcanvas_menu_wrapper');
+        const overlay = document.querySelector('.off_canvas_overlay');
+        if (offcanvasMenu && offcanvasMenu.classList.contains('active')) {
+            offcanvasMenu.classList.remove('active');
+            overlay.classList.remove('active');
+        }
+
+        // Scroll to section
+        setTimeout(() => {
+            targetSection.scrollIntoView({
+                behavior: 'smooth'
+            });
+        }, 300); // Small delay to allow menu to close
+    }
+}
+
+// Add click handlers for navigation links
+document.addEventListener('DOMContentLoaded', function() {
+    // Handle main menu and mobile menu links
+    const allNavLinks = document.querySelectorAll('.main_menu a, .offcanvas_main_menu a');
+    
+    allNavLinks.forEach(link => {
+        link.addEventListener('click', function(e) {
+            e.preventDefault();
+            const href = this.getAttribute('href');
+            
+            // Map navigation links to section IDs
+            const sectionMap = {
+                'home': '#home',
+                'shop': '#shop',
+                'events': '#events',
+                'blog': '#blog'
+            };
+            
+            if (sectionMap[href]) {
+                smoothScroll(sectionMap[href]);
+            }
+        });
+    });
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+    const slider = document.querySelector('.slider');
+    const slides = document.querySelectorAll('.slide');
+    const dots = document.querySelectorAll('.dot');
+    const prevBtn = document.querySelector('.prev');
+    const nextBtn = document.querySelector('.next');
+    
+    let currentIndex = 0;
+    const slideCount = slides.length;
+    let slideInterval;
+    const intervalTime = 5000;
+    
+    // Initialize slider
+    function goToSlide(index) {
+        slider.style.transform = `translateX(-${index * 100}%)`;
+        currentIndex = index;
+        updateDots();
+    }
+    
+    // Update dot indicators
+    function updateDots() {
+        dots.forEach((dot, index) => {
+            dot.classList.toggle('active', index === currentIndex);
+        });
+    }
+    
+    // Next slide
+    function nextSlide() {
+        const newIndex = (currentIndex + 1) % slideCount;
+        goToSlide(newIndex);
+    }
+    
+    // Previous slide
+    function prevSlide() {
+        const newIndex = (currentIndex - 1 + slideCount) % slideCount;
+        goToSlide(newIndex);
+    }
+    
+    // Start auto sliding
+    function startSlider() {
+        slideInterval = setInterval(nextSlide, intervalTime);
+    }
+    
+    // Stop auto sliding
+    function stopSlider() {
+        clearInterval(slideInterval);
+    }
+    
+    // Event listeners
+    prevBtn.addEventListener('click', () => {
+        prevSlide();
+        stopSlider();
+        startSlider();
+    });
+    
+    nextBtn.addEventListener('click', () => {
+        nextSlide();
+        stopSlider();
+        startSlider();
+    });
+    
+    dots.forEach((dot, index) => {
+        dot.addEventListener('click', () => {
+            goToSlide(index);
+            stopSlider();
+            startSlider();
+        });
+    });
+    
+    // Touch events for mobile
+    let touchStartX = 0;
+    let touchEndX = 0;
+    
+    slider.addEventListener('touchstart', (e) => {
+        touchStartX = e.changedTouches[0].screenX;
+        stopSlider();
+    }, {passive: true});
+    
+    slider.addEventListener('touchend', (e) => {
+        touchEndX = e.changedTouches[0].screenX;
+        handleSwipe();
+        startSlider();
+    }, {passive: true});
+    
+    function handleSwipe() {
+        if (touchEndX < touchStartX - 50) {
+            nextSlide();
+        }
+        if (touchEndX > touchStartX + 50) {
+            prevSlide();
+        }
+    }
+    
+    // Pause on hover
+    slider.addEventListener('mouseenter', stopSlider);
+    slider.addEventListener('mouseleave', startSlider);
+    
+    // Initialize
+    startSlider();
+});
