@@ -58,10 +58,10 @@
                         <a href="home">Home</a>
                     </li>
                     <li class="menu-item-has-children">
-                        <a href="shop">New Beer</a>
+                        <a href="pages/newbeer.html">New Beer</a>
                     </li>
                     <li class="menu-item-has-children">
-                        <a href="#newwine">New Wine</a>
+                        <a href="./pages/newwine.html">New Wine</a>
                     </li>
                     <li class="menu-item-has-children">
                         <a href="#other">Others</a>
@@ -115,7 +115,8 @@
                                         <li>
                                             <a href="home" class="active">Home</a>
                                         </li>
-                                        <li><a href="shop">New Beer</a></li>
+                                        <!-- <li><a href="./newbeer.html">New Beer</a></li> -->
+                                        <li><a href="./pages/newbeer.html">New Beer</a></li>
                                         <li><a href="#newwine">New Wine</a></li>
                                         <li><a href="shop">Beer</a></li>
                                         <li><a href="#newwine">Keg</a></li>
@@ -125,17 +126,17 @@
                                         <li><a href="#contact">Contact Us</a></li>
                                         <li class="header_wishlist">
                                             <a href="#">
-                                                <i class="fas fa-user"></i>
+                                                <i class="fab fa-facebook"></i>
                                             </a>
                                         </li>
                                         <li class="mini_cart_wrapper">
                                             <a href="javascript:void(0)">
-                                                <i class="fa fa-shopping-cart"></i>
+                                                <i class="fab fa-instagram"></i>
                                             </a>
                                         </li>
                                         <li class="top_links">
                                             <a href="#">
-                                                <i class="fa fa-cog"></i>
+                                                <i class="fab fa-google"></i>
                                             </a>
                                         </li>
                                     </ul>
@@ -201,14 +202,22 @@
         </div>
 
         <div class="image-area">
-            <!-- <div class="year">2004</div> -->
             <img src="./images/history.jpg" alt="Vineyard Woman" />
-            <!-- <p class="caption">Ut augue mattis augue dui et amet</p> -->
         </div>
     </section>
 
 
     <section id="newwine" class="featured-collection">
+        <center>
+        <div class="banner-section">
+            <img src="./images/winebanner.jpg" alt="Wine Banner">
+        
+            <div class="banner-overlay"></div>
+            <div class="banner-content">
+                <h2>NEW BEER</h2>
+            </div>
+        </div>
+        </center>
         <div class="featured-heading">
           <h2>FEATURED COLLECTION</h2>
         </div>
@@ -274,23 +283,21 @@
               <p class="card-title">PREMIUM BLEND</p>
               <p class="card-sub">Magna aliqua ut enim</p>
             </div>
+            <div class="card">
+              <img src="./images/main product/10.jpg" alt="Premium Blend">
+              <h4>LOREMIS</h4>
+              <p class="card-title">PREMIUM BLEND</p>
+              <p class="card-sub">Magna aliqua ut enim</p>
+            </div>
+            <div class="card">
+              <img src="./images/main product/10.jpg" alt="Premium Blend">
+              <h4>LOREMIS</h4>
+              <p class="card-title">PREMIUM BLEND</p>
+              <p class="card-sub">Magna aliqua ut enim</p>
+            </div>
           </div>
-          
-          <button class="slider-arrow prev">&#10094;</button>
-          <button class="slider-arrow next">&#10095;</button>
         </div>
         </section>
-        <!-- <div class="slider-controls">
-          <div class="slider-dots">
-            <span class="dot active"></span>
-            <span class="dot"></span>
-            <span class="dot"></span>
-            <span class="dot"></span>
-            <span class="dot"></span>
-          </div>
-        </div> -->
-      </section>
-    
       <script>
         document.addEventListener('DOMContentLoaded', function() {
           const track = document.querySelector('.cards-track');
@@ -352,13 +359,18 @@
 
 
     <section id="shop" class="product-slide">
+        <center>
+            <div class="banner-section">
+                <img src="./images/winebanner.jpg" alt="Wine Banner">
+            
+                <div class="banner-overlay"></div>
+                <div class="banner-content">
+                    <h2>NEW WINE</h2>
+                </div>
+            </div>
+            </center>
         <div class="spirit-content">
-            <p class="subheading">AUGUE SED NEC</p>
             <h2 class="heading">OUR BEST SPIRIT</h2>
-            <p class="desc">
-                Mattis aliquam malesuada euismod augue posuere venenatis.<br>
-                Maecenas faucibus dui vitae tellus et mi.
-            </p>
         </div>
         <div class="container">
             <div class="row">
@@ -767,21 +779,724 @@
 
 
 
-    <!-- <section class="natural-aroma-section">
-        <div class="container">
-            <p class="subheading">AUGUE SED NEC</p>
-            <h2 class="heading">NATURAL AROMA</h2>
-            <div class="image-grid">
-                <img src="./images/1berries.jpg" alt="Hand picking grapes">
-                <img src="./images/2woman.jpg" alt="Woman in vineyard">
-                <img src="./images/3grapes.jpg" alt="Grapes hanging">
-                <img src="./images/4wine.jpg" alt="Wine bottles on barrel">
-                <img src="./images/grapes.jpg" alt="Hands holding grapes">
-                <img src="./images/6table.jpg" alt="Cheers with wine glasses">
+
+    <section id="newwine" class="featured-collection">
+        <center>
+        <div class="banner-section">
+            <img src="./images/winebanner.jpg" alt="Wine Banner">
+        
+            <div class="banner-overlay"></div>
+            <div class="banner-content">
+                <h2>BEER</h2>
             </div>
         </div>
-    </section> -->
+        </center>
+        <div class="featured-heading">
+          <h2>FEATURED COLLECTION</h2>
+        </div>
+        <div class="slider-container">
+          <div class="cards-track">
+            <div class="card">
+              <img src="./images/main product/1.png" alt="Wine Glass">
+              <h4>LOREMIS</h4>
+              <p class="card-title">WINE GLASS</p>
+              <p class="card-sub">Lorem ipsum dolor sit amet</p>
+            </div>
+            <div class="card">
+              <img src="./images/main product/2.webp" alt="Tasting Day">
+              <h4>LOREMIS</h4>
+              <p class="card-title">TASTING DAY</p>
+              <p class="card-sub">Consectetur adipiscing elit</p>
+            </div>
+            <div class="card">
+              <img src="./images/main product/3.webp" alt="Best Harvest">
+              <h4>LOREMIS</h4>
+              <p class="card-title">BEST HARVEST</p>
+              <p class="card-sub">Sed do eiusmod tempor</p>
+            </div>
+            <div class="card">
+              <img src="./images/main product/4.webp" alt="Our Package">
+              <h4>LOREMIS</h4>
+              <p class="card-title">OUR PACKAGE</p>
+              <p class="card-sub">Incididunt ut labore et dolore</p>
+            </div>
+            <div class="card">
+              <img src="./images/main product/5.webp" alt="Premium Blend">
+              <h4>LOREMIS</h4>
+              <p class="card-title">PREMIUM BLEND</p>
+              <p class="card-sub">Magna aliqua ut enim</p>
+            </div>
+            <div class="card">
+              <img src="./images/main product/6.webp" alt="Premium Blend">
+              <h4>LOREMIS</h4>
+              <p class="card-title">PREMIUM BLEND</p>
+              <p class="card-sub">Magna aliqua ut enim</p>
+            </div>
+            <div class="card">
+              <img src="./images/main product/7.webp" alt="Premium Blend">
+              <h4>LOREMIS</h4>
+              <p class="card-title">PREMIUM BLEND</p>
+              <p class="card-sub">Magna aliqua ut enim</p>
+            </div>
+            <div class="card">
+              <img src="./images/main product/8.png" alt="Premium Blend">
+              <h4>LOREMIS</h4>
+              <p class="card-title">PREMIUM BLEND</p>
+              <p class="card-sub">Magna aliqua ut enim</p>
+            </div>
+            <div class="card">
+              <img src="./images/main product/9.jpg" alt="Premium Blend">
+              <h4>LOREMIS</h4>
+              <p class="card-title">PREMIUM BLEND</p>
+              <p class="card-sub">Magna aliqua ut enim</p>
+            </div>
+            <div class="card">
+              <img src="./images/main product/10.jpg" alt="Premium Blend">
+              <h4>LOREMIS</h4>
+              <p class="card-title">PREMIUM BLEND</p>
+              <p class="card-sub">Magna aliqua ut enim</p>
+            </div>
+            <div class="card">
+              <img src="./images/main product/10.jpg" alt="Premium Blend">
+              <h4>LOREMIS</h4>
+              <p class="card-title">PREMIUM BLEND</p>
+              <p class="card-sub">Magna aliqua ut enim</p>
+            </div>
+            <div class="card">
+              <img src="./images/main product/10.jpg" alt="Premium Blend">
+              <h4>LOREMIS</h4>
+              <p class="card-title">PREMIUM BLEND</p>
+              <p class="card-sub">Magna aliqua ut enim</p>
+            </div>
+          </div>
+        </div>
+        </section>
+      <script>
+        document.addEventListener('DOMContentLoaded', function() {
+          const track = document.querySelector('.cards-track');
+          const cards = document.querySelectorAll('.card');
+          const dots = document.querySelectorAll('.dot');
+          const prevBtn = document.querySelector('.prev');
+          const nextBtn = document.querySelector('.next');
+          
+          let currentIndex = 0;
+          const cardCount = cards.length;
+          
+          function updateSlider() {
+            const cardWidth = cards[0].offsetWidth + 
+                             parseInt(getComputedStyle(cards[0]).marginLeft) + 
+                             parseInt(getComputedStyle(cards[0]).marginRight);
+            
+            track.style.transform = `translateX(-${currentIndex * cardWidth}px)`;
+            
+            // Update dots
+            dots.forEach((dot, index) => {
+              dot.classList.toggle('active', index === currentIndex);
+            });
+          }
+          
+          // Dot click events
+          dots.forEach((dot, index) => {
+            dot.addEventListener('click', () => {
+              currentIndex = index;
+              updateSlider();
+            });
+          });
+          
+          // Arrow click events
+          prevBtn.addEventListener('click', () => {
+            currentIndex = (currentIndex - 1 + cardCount) % cardCount;
+            updateSlider();
+          });
+          
+          nextBtn.addEventListener('click', () => {
+            currentIndex = (currentIndex + 1) % cardCount;
+            updateSlider();
+          });
+          
+          // Auto-slide for desktop
+          if (window.matchMedia('(min-width: 992px)').matches) {
+            setInterval(() => {
+              currentIndex = (currentIndex + 1) % cardCount;
+              updateSlider();
+            }, 3000);
+          }
+          
+          // Handle window resize
+          window.addEventListener('resize', updateSlider);
+        });
+      </script>
 
+
+
+<section id="newwine" class="featured-collection">
+    <center>
+    <div class="banner-section">
+        <img src="./images/winebanner.jpg" alt="Wine Banner">
+    
+        <div class="banner-overlay"></div>
+        <div class="banner-content">
+            <h2>KEGS</h2>
+        </div>
+    </div>
+    </center>
+    <div class="featured-heading">
+      <h2>FEATURED COLLECTION</h2>
+    </div>
+    <div class="slider-container">
+      <div class="cards-track">
+        <div class="card">
+          <img src="./images/main product/1.png" alt="Wine Glass">
+          <h4>LOREMIS</h4>
+          <p class="card-title">WINE GLASS</p>
+          <p class="card-sub">Lorem ipsum dolor sit amet</p>
+        </div>
+        <div class="card">
+          <img src="./images/main product/2.webp" alt="Tasting Day">
+          <h4>LOREMIS</h4>
+          <p class="card-title">TASTING DAY</p>
+          <p class="card-sub">Consectetur adipiscing elit</p>
+        </div>
+        <div class="card">
+          <img src="./images/main product/3.webp" alt="Best Harvest">
+          <h4>LOREMIS</h4>
+          <p class="card-title">BEST HARVEST</p>
+          <p class="card-sub">Sed do eiusmod tempor</p>
+        </div>
+        <div class="card">
+          <img src="./images/main product/4.webp" alt="Our Package">
+          <h4>LOREMIS</h4>
+          <p class="card-title">OUR PACKAGE</p>
+          <p class="card-sub">Incididunt ut labore et dolore</p>
+        </div>
+        <div class="card">
+          <img src="./images/main product/5.webp" alt="Premium Blend">
+          <h4>LOREMIS</h4>
+          <p class="card-title">PREMIUM BLEND</p>
+          <p class="card-sub">Magna aliqua ut enim</p>
+        </div>
+        <div class="card">
+          <img src="./images/main product/6.webp" alt="Premium Blend">
+          <h4>LOREMIS</h4>
+          <p class="card-title">PREMIUM BLEND</p>
+          <p class="card-sub">Magna aliqua ut enim</p>
+        </div>
+        <div class="card">
+          <img src="./images/main product/7.webp" alt="Premium Blend">
+          <h4>LOREMIS</h4>
+          <p class="card-title">PREMIUM BLEND</p>
+          <p class="card-sub">Magna aliqua ut enim</p>
+        </div>
+        <div class="card">
+          <img src="./images/main product/8.png" alt="Premium Blend">
+          <h4>LOREMIS</h4>
+          <p class="card-title">PREMIUM BLEND</p>
+          <p class="card-sub">Magna aliqua ut enim</p>
+        </div>
+        <div class="card">
+          <img src="./images/main product/9.jpg" alt="Premium Blend">
+          <h4>LOREMIS</h4>
+          <p class="card-title">PREMIUM BLEND</p>
+          <p class="card-sub">Magna aliqua ut enim</p>
+        </div>
+        <div class="card">
+          <img src="./images/main product/10.jpg" alt="Premium Blend">
+          <h4>LOREMIS</h4>
+          <p class="card-title">PREMIUM BLEND</p>
+          <p class="card-sub">Magna aliqua ut enim</p>
+        </div>
+        <div class="card">
+          <img src="./images/main product/10.jpg" alt="Premium Blend">
+          <h4>LOREMIS</h4>
+          <p class="card-title">PREMIUM BLEND</p>
+          <p class="card-sub">Magna aliqua ut enim</p>
+        </div>
+        <div class="card">
+          <img src="./images/main product/10.jpg" alt="Premium Blend">
+          <h4>LOREMIS</h4>
+          <p class="card-title">PREMIUM BLEND</p>
+          <p class="card-sub">Magna aliqua ut enim</p>
+        </div>
+      </div>
+    </div>
+    </section>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const track = document.querySelector('.cards-track');
+      const cards = document.querySelectorAll('.card');
+      const dots = document.querySelectorAll('.dot');
+      const prevBtn = document.querySelector('.prev');
+      const nextBtn = document.querySelector('.next');
+      
+      let currentIndex = 0;
+      const cardCount = cards.length;
+      
+      function updateSlider() {
+        const cardWidth = cards[0].offsetWidth + 
+                         parseInt(getComputedStyle(cards[0]).marginLeft) + 
+                         parseInt(getComputedStyle(cards[0]).marginRight);
+        
+        track.style.transform = `translateX(-${currentIndex * cardWidth}px)`;
+        
+        // Update dots
+        dots.forEach((dot, index) => {
+          dot.classList.toggle('active', index === currentIndex);
+        });
+      }
+      
+      // Dot click events
+      dots.forEach((dot, index) => {
+        dot.addEventListener('click', () => {
+          currentIndex = index;
+          updateSlider();
+        });
+      });
+      
+      // Arrow click events
+      prevBtn.addEventListener('click', () => {
+        currentIndex = (currentIndex - 1 + cardCount) % cardCount;
+        updateSlider();
+      });
+      
+      nextBtn.addEventListener('click', () => {
+        currentIndex = (currentIndex + 1) % cardCount;
+        updateSlider();
+      });
+      
+      // Auto-slide for desktop
+      if (window.matchMedia('(min-width: 992px)').matches) {
+        setInterval(() => {
+          currentIndex = (currentIndex + 1) % cardCount;
+          updateSlider();
+        }, 3000);
+      }
+      
+      // Handle window resize
+      window.addEventListener('resize', updateSlider);
+    });
+  </script>
+
+
+
+<section id="shop" class="product-slide">
+    <center>
+        <div class="banner-section">
+            <img src="./images/winebanner.jpg" alt="Wine Banner">
+        
+            <div class="banner-overlay"></div>
+            <div class="banner-content">
+                <h2>WINE 10% off <br>
+                on 6 bottle</h2>
+            </div>
+        </div>
+        </center>
+    <div class="spirit-content">
+        <h2 class="heading">OUR BEST SPIRIT</h2>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="dark-headingstyle-one text-center">
+                <img src="images/Icon-sep.png" alt="">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div role="tabpanel" class="tabSix text-center">
+                    <div class="tab-content">
+                        <div class="tab-pane in active" id="contentSix-one">
+                            <div class="tab-pane" id="contentSix-2">
+                                <div class="owl-carousel owl-theme product-slider">
+                                    <div class="product-main">
+                                        <figure class="dark-theme">
+                                            <img src="./images//main product/1.png" alt="">
+                                            <div class="ribbon"><span>NEW</span></div>
+                                            <span class="block-sticker-tag1">
+                                                <span class="off_tag"><strong><i
+                                                            class="fa fa-shopping-basket"></i></strong></span>
+                                            </span>
+                                            <span class="block-sticker-tag2">
+                                                <span class="off_tag1"><strong><i
+                                                            class="fa fa-heart"></i></strong></span>
+                                            </span>
+                                            <span class="block-sticker-tag3">
+                                                <span class="off_tag2"><strong><i
+                                                            class="fa fa-eye"></i></strong></span>
+                                            </span>
+                                        </figure>
+                                        <div class="block-caption1">
+                                            <h4 style="color: black;">Happy Dad Fruit Punch</h4>
+                                            <div class="clear"></div>
+                                            <div class="rpice">
+                                                <span class="sell-price">Rs. 26669</span>
+                                                <span class="actual-price">Rs. 28999</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="product-main">
+                                        <figure class="dark-theme">
+                                            <img src="./images//main product/2.webp" alt="">
+
+                                            <span class="block-sticker-tag1">
+                                                <span class="off_tag"><strong><i
+                                                            class="fa fa-shopping-basket"></i></strong></span>
+                                            </span>
+                                            <span class="block-sticker-tag2">
+                                                <span class="off_tag1"><strong><i
+                                                            class="fa fa-heart"></i></strong></span>
+                                            </span>
+                                            <span class="block-sticker-tag3">
+                                                <span class="off_tag2"><strong><i
+                                                            class="fa fa-eye"></i></strong></span>
+                                            </span>
+                                        </figure>
+                                        <div class="block-caption1">
+                                            <h4 style="color: black;">Quinta do Crasto</h4>
+                                            <div class="clear"></div>
+                                            <div class="rpice">
+                                                <span class="sell-price">Rs. 26669</span>
+                                                <span class="actual-price">Rs. 28999</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="product-main">
+                                        <figure class="dark-theme">
+                                            <img src="./images//main product/3.webp" alt="">
+
+                                            <span class="block-sticker-tag1">
+                                                <span class="off_tag"><strong><i
+                                                            class="fa fa-shopping-basket"></i></strong></span>
+                                            </span>
+                                            <span class="block-sticker-tag2">
+                                                <span class="off_tag1"><strong><i
+                                                            class="fa fa-heart"></i></strong></span>
+                                            </span>
+                                            <span class="block-sticker-tag3">
+                                                <span class="off_tag2"><strong><i
+                                                            class="fa fa-eye"></i></strong></span>
+                                            </span>
+                                        </figure>
+                                        <div class="block-caption1">
+                                            <h4 style="color: black;">Quinta do Crasto</h4>
+                                            <div class="clear"></div>
+                                            <div class="rpice">
+                                                <span class="sell-price">Rs. 26669</span>
+                                                <span class="actual-price">Rs. 28999</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="product-main">
+                                        <figure class="dark-theme">
+                                            <img src="./images//main product/4.webp" alt="">
+                                            <span class="block-sticker-tag1">
+                                                <span class="off_tag"><strong><i
+                                                            class="fa fa-shopping-basket"></i></strong></span>
+                                            </span>
+                                            <span class="block-sticker-tag2">
+                                                <span class="off_tag1"><strong><i
+                                                            class="fa fa-heart"></i></strong></span>
+                                            </span>
+                                            <span class="block-sticker-tag3">
+                                                <span class="off_tag2"><strong><i
+                                                            class="fa fa-eye"></i></strong></span>
+                                            </span>
+                                        </figure>
+                                        <div class="block-caption1">
+                                            <h4 style="color: black;">Quinta do Crasto</h4>
+                                            <div class="clear"></div>
+                                            <div class="rpice">
+                                                <span class="sell-price">Rs. 26669</span>
+                                                <span class="actual-price">Rs. 28999</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="product-main">
+                                        <figure class="dark-theme">
+                                            <img src="./images//main product/5.webp" alt="">
+                                            <span class="block-sticker-tag1">
+                                                <span class="off_tag"><strong><i
+                                                            class="fa fa-shopping-basket"></i></strong></span>
+                                            </span>
+                                            <span class="block-sticker-tag2">
+                                                <span class="off_tag1"><strong><i
+                                                            class="fa fa-heart"></i></strong></span>
+                                            </span>
+                                            <span class="block-sticker-tag3">
+                                                <span class="off_tag2"><strong><i
+                                                            class="fa fa-eye"></i></strong></span>
+                                            </span>
+                                        </figure>
+                                        <div class="block-caption1">
+                                            <h4 style="color: black;">Quinta do Crasto</h4>
+                                            <div class="clear"></div>
+                                            <div class="rpice">
+                                                <span class="sell-price">Rs. 26669</span>
+                                                <span class="actual-price">Rs. 28999</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane" id="contentSix-two">
+                            <div class="owl-carousel owl-theme product-slider">
+                                <div class="product-main">
+                                    <figure class="dark-theme">
+                                        <img src="./images//main product/6.webp" alt="">
+                                        <span class="block-sticker-tag1">
+                                            <span class="off_tag"><strong><i
+                                                        class="fa fa-shopping-basket"></i></strong></span>
+                                        </span>
+                                        <span class="block-sticker-tag2">
+                                            <span class="off_tag1"><strong><i
+                                                        class="fa fa-heart"></i></strong></span>
+                                        </span>
+                                        <span class="block-sticker-tag3">
+                                            <span class="off_tag2"><strong><i class="fa fa-eye"></i></strong></span>
+                                        </span>
+                                    </figure>
+                                    <div class="block-caption1">
+                                        <h4 style="color: black;">Domaine Jacques</h4>
+                                        <div class="clear"></div>
+                                        <div class="rpice">
+                                            <span class="sell-price">Rs. 55691</span>
+                                            <span class="actual-price">Rs. 56951</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product-main">
+                                    <figure class="dark-theme">
+                                        <img src="./images//main product/7.webp" alt="">
+
+                                        <span class="block-sticker-tag1">
+                                            <span class="off_tag"><strong><i
+                                                        class="fa fa-shopping-basket"></i></strong></span>
+                                        </span>
+                                        <span class="block-sticker-tag2">
+                                            <span class="off_tag1"><strong><i
+                                                        class="fa fa-heart"></i></strong></span>
+                                        </span>
+                                        <span class="block-sticker-tag3">
+                                            <span class="off_tag2"><strong><i class="fa fa-eye"></i></strong></span>
+                                        </span>
+                                    </figure>
+                                    <div class="block-caption1">
+                                        <h4 style="color: black;">Domaine Jacques</h4>
+                                        <div class="clear"></div>
+                                        <div class="rpice">
+                                            <span class="sell-price">Rs. 55691</span>
+                                            <span class="actual-price">Rs. 56951</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product-main">
+                                    <figure class="dark-theme">
+                                        <img src="./images//main product/8.png" alt="">
+
+                                        <span class="block-sticker-tag1">
+                                            <span class="off_tag"><strong><i
+                                                        class="fa fa-shopping-basket"></i></strong></span>
+                                        </span>
+                                        <span class="block-sticker-tag2">
+                                            <span class="off_tag1"><strong><i
+                                                        class="fa fa-heart"></i></strong></span>
+                                        </span>
+                                        <span class="block-sticker-tag3">
+                                            <span class="off_tag2"><strong><i class="fa fa-eye"></i></strong></span>
+                                        </span>
+                                    </figure>
+                                    <div class="block-caption1">
+                                        <h4 style="color: black;">Domaine Jacques</h4>
+                                        <div class="clear"></div>
+                                        <div class="rpice">
+                                            <span class="sell-price">Rs. 55691</span>
+                                            <span class="actual-price">Rs. 56951</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product-main">
+                                    <figure class="dark-theme">
+                                        <img src="./images//main product/9.jpg" alt="">
+                                        <div class="ribbon"><span>New</span></div>
+                                        <span class="block-sticker-tag1">
+                                            <span class="off_tag"><strong><i
+                                                        class="fa fa-shopping-basket"></i></strong></span>
+                                        </span>
+                                        <span class="block-sticker-tag2">
+                                            <span class="off_tag1"><strong><i
+                                                        class="fa fa-heart"></i></strong></span>
+                                        </span>
+                                        <span class="block-sticker-tag3">
+                                            <span class="off_tag2"><strong><i class="fa fa-eye"></i></strong></span>
+                                        </span>
+                                    </figure>
+                                    <div class="block-caption1">
+                                        <h4 style="color: black;">Domaine Jacques</h4>
+                                        <div class="clear"></div>
+                                        <div class="rpice">
+                                            <span class="sell-price">Rs. 55691</span>
+                                            <span class="actual-price">Rs. 56951</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product-main">
+                                    <figure class="dark-theme">
+                                        <img src="./images//main product/10.jpg" alt="">
+                                        <span class="block-sticker-tag1">
+                                            <span class="off_tag"><strong><i
+                                                        class="fa fa-shopping-basket"></i></strong></span>
+                                        </span>
+                                        <span class="block-sticker-tag2">
+                                            <span class="off_tag1"><strong><i
+                                                        class="fa fa-heart"></i></strong></span>
+                                        </span>
+                                        <span class="block-sticker-tag3">
+                                            <span class="off_tag2"><strong><i class="fa fa-eye"></i></strong></span>
+                                        </span>
+                                    </figure>
+                                    <div class="block-caption1">
+                                        <h4 style="color: black;">Domaine Jacques</h4>
+                                        <div class="clear"></div>
+                                        <div class="rpice">
+                                            <span class="sell-price">Rs. 55691</span>
+                                            <span class="actual-price">Rs. 56951</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane" id="contentSix-three">
+                            <div class="owl-carousel owl-theme product-slider">
+                                <div class="product-main">
+                                    <figure class="dark-theme">
+                                        <img src="images/product/product-3.png" alt="">
+                                        <span class="block-sticker-tag1">
+                                            <span class="off_tag"><strong><i
+                                                        class="fa fa-shopping-basket"></i></strong></span>
+                                        </span>
+                                        <span class="block-sticker-tag2">
+                                            <span class="off_tag1"><strong><i
+                                                        class="fa fa-heart"></i></strong></span>
+                                        </span>
+                                        <span class="block-sticker-tag3">
+                                            <span class="off_tag2"><strong><i class="fa fa-eye"></i></strong></span>
+                                        </span>
+                                    </figure>
+                                    <div class="block-caption1">
+                                        <h4 style="color: black;">Domaine Jacques</h4>
+                                        <div class="clear"></div>
+                                        <div class="rpice">
+                                            <span class="sell-price">Rs. 55691</span>
+                                            <span class="actual-price">Rs. 56951</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product-main">
+                                    <figure class="dark-theme">
+                                        <img src="images/product/product-1.png" alt="">
+
+                                        <span class="block-sticker-tag1">
+                                            <span class="off_tag"><strong><i
+                                                        class="fa fa-shopping-basket"></i></strong></span>
+                                        </span>
+                                        <span class="block-sticker-tag2">
+                                            <span class="off_tag1"><strong><i
+                                                        class="fa fa-heart"></i></strong></span>
+                                        </span>
+                                        <span class="block-sticker-tag3">
+                                            <span class="off_tag2"><strong><i class="fa fa-eye"></i></strong></span>
+                                        </span>
+                                    </figure>
+                                    <div class="block-caption1">
+                                        <h4 style="color: black;">Domaine Jacques</h4>
+                                        <div class="clear"></div>
+                                        <div class="rpice">
+                                            <span class="sell-price">Rs. 55691</span>
+                                            <span class="actual-price">Rs. 56951</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product-main">
+                                    <figure class="dark-theme">
+                                        <img src="images/product/product-3.png" alt="">
+
+                                        <span class="block-sticker-tag1">
+                                            <span class="off_tag"><strong><i
+                                                        class="fa fa-shopping-basket"></i></strong></span>
+                                        </span>
+                                        <span class="block-sticker-tag2">
+                                            <span class="off_tag1"><strong><i
+                                                        class="fa fa-heart"></i></strong></span>
+                                        </span>
+                                        <span class="block-sticker-tag3">
+                                            <span class="off_tag2"><strong><i class="fa fa-eye"></i></strong></span>
+                                        </span>
+                                    </figure>
+                                    <div class="block-caption1">
+                                        <h4 style="color: black;">Domaine Jacques</h4>
+                                        <div class="clear"></div>
+                                        <div class="rpice">
+                                            <span class="sell-price">Rs. 55691</span>
+                                            <span class="actual-price">Rs. 56951</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product-main">
+                                    <figure class="dark-theme">
+                                        <img src="images/product/product-6.png" alt="">
+                                        <div class="ribbon"><span>New</span></div>
+                                        <span class="block-sticker-tag1">
+                                            <span class="off_tag"><strong><i
+                                                        class="fa fa-shopping-basket"></i></strong></span>
+                                        </span>
+                                        <span class="block-sticker-tag2">
+                                            <span class="off_tag1"><strong><i
+                                                        class="fa fa-heart"></i></strong></span>
+                                        </span>
+                                        <span class="block-sticker-tag3">
+                                            <span class="off_tag2"><strong><i class="fa fa-eye"></i></strong></span>
+                                        </span>
+                                    </figure>
+                                    <div class="block-caption1">
+                                        <h4 style="color: black;">Domaine Jacques</h4>
+                                        <div class="clear"></div>
+                                        <div class="rpice">
+                                            <span class="sell-price">Rs. 55691</span>
+                                            <span class="actual-price">Rs. 56951</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product-main">
+                                    <figure class="dark-theme">
+                                        <img src="images/product/product-4.png" alt="">
+                                        <span class="block-sticker-tag1">
+                                            <span class="off_tag"><strong><i
+                                                        class="fa fa-shopping-basket"></i></strong></span>
+                                        </span>
+                                        <span class="block-sticker-tag2">
+                                            <span class="off_tag1"><strong><i
+                                                        class="fa fa-heart"></i></strong></span>
+                                        </span>
+                                        <span class="block-sticker-tag3">
+                                            <span class="off_tag2"><strong><i class="fa fa-eye"></i></strong></span>
+                                        </span>
+                                    </figure>
+                                    <div class="block-caption1">
+                                        <h4 style="color: black;">Domaine Jacques</h4>
+                                        <div class="clear"></div>
+                                        <div class="rpice">
+                                            <span class="sell-price">Rs. 55691</span>
+                                            <span class="actual-price">Rs. 56951</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
 
 
@@ -891,58 +1606,6 @@
 
 
 
-    <section id="events" class="vineyard-events">
-        <div class="content">
-            <p class="sub-title">AUGUE SED NEC</p>
-            <h2 style="color: black;">VINEYARD EVENTS</h2>
-            <br><br>
-            <div class="events-container">
-                <div class="event-card">
-                    <img src="./images/1berries.jpg" alt="Wine Tour" />
-                    <div class="event-details">
-                        <h3 style="color: black;">WINE TOUR</h3>
-                        <p><i class="fa-solid fa-calendar-days"></i> <em>June 25, 2023</em>
-                            <i class="fa-regular fa-clock"></i> 10:00
-                            <i class="fa-solid fa-location-dot"></i> Lisbon, Portugal
-                        </p>
-                        <a href="#">SEE MORE</a>
-                    </div>
-                </div>
-
-                <div class="event-card">
-                    <img src="./images/2woman.jpg" alt="Aperitiv" />
-                    <div class="event-details">
-                        <h3 style="color: black;">APERITIV</h3>
-                        <p><i class="fa-solid fa-calendar-days"></i> <em>June 25, 2023</em>
-                            <i class="fa-regular fa-clock"></i> 10:00
-                            <i class="fa-solid fa-location-dot"></i> Lisbon, Portugal
-                        </p>
-                        <a href="#">SEE MORE</a>
-                    </div>
-                </div>
-
-                <div class="event-card">
-                    <img src="./images/4wine.jpg" alt="Drink’s Origin" />
-                    <div class="event-details">
-                        <h3 style="color: black;">DRINK’S ORIGIN</h3>
-                        <p><i class="fa-solid fa-calendar-days"></i> <em>June 25, 2023</em>
-                            <i class="fa-regular fa-clock"></i> 10:00
-                            <i class="fa-solid fa-location-dot"></i> Lisbon, Portugal
-                        </p>
-                        <a href="#">SEE MORE</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="event-image">
-            <img src="./images/cave.jpg" alt="Vineyard Cellar"
-                style="height: 500px; width: 400px; object-fit: cover;" />
-            <!-- <p class="image-caption"><em>Ut augue mattis augue dui et amet</em></p> -->
-        </div>
-    </section>
-
-
 
 
     <section class="clients-section">
@@ -1031,8 +1694,14 @@
                         referrerpolicy="no-referrer-when-downgrade">
                     </iframe>
                 </div>
+
+
+                
             </div>
+
+            
         </div>
+        
         <div class="footer-bottom">
             <p>Copyright @ <span class="highlight">TheVivekChauhan</span></p>
         </div><br>
