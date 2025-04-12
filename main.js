@@ -130,29 +130,26 @@ function smoothScroll(targetId) {
 }
 
 // Add click handlers for navigation links
-document.addEventListener('DOMContentLoaded', function() {
-    // Handle main menu and mobile menu links
-    const allNavLinks = document.querySelectorAll('.main_menu a, .offcanvas_main_menu a');
+// document.addEventListener('DOMContentLoaded', function() {
+//     // Handle main menu and mobile menu links
+//     const allNavLinks = document.querySelectorAll('.main_menu a, .offcanvas_main_menu a');
     
-    allNavLinks.forEach(link => {
-        link.addEventListener('click', function(e) {
-            e.preventDefault();
-            const href = this.getAttribute('href');
+//     allNavLinks.forEach(link => {
+//         link.addEventListener('click', function(e) {
+//             e.preventDefault();
+//             const href = this.getAttribute('href');
             
-            // Map navigation links to section IDs
-            const sectionMap = {
-                'home': '#home',
-                'shop': '#shop',
-                'events': '#events',
-                'blog': '#blog'
-            };
+//             // Map navigation links to section IDs
+//             const sectionMap = {
+//                 'home': '#home',
+//             };
             
-            if (sectionMap[href]) {
-                smoothScroll(sectionMap[href]);
-            }
-        });
-    });
-});
+//             if (sectionMap[href]) {
+//                 smoothScroll(sectionMap[href]);
+//             }
+//         });
+//     });
+// });
 
 document.addEventListener('DOMContentLoaded', function() {
     const slider = document.querySelector('.slider');
